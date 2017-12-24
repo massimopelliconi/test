@@ -1,0 +1,22 @@
+<html>
+
+<head>
+    <link rel="stylesheet" href="/styles/main.css">
+</head>
+
+<body>
+    <h1 id="title" class="title">Contatore</h1> Conto fino a <span id="box"></span>
+    <button onclick="scriviNome()">Click</button>
+    
+    <script src="/scripts/main.js"></script>
+    <script>
+    var nome;
+
+    function scriviNome() {
+        nome = prompt("inserisci qui il tuo nome", "il tuo nome");
+        document.getElementById("title").innerHTML=nome;
+    }
+    </script>
+</body>
+
+</html>
