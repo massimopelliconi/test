@@ -18,3 +18,6 @@
 ├─── shared/
 ├────── utilities.php - file that will return pagination array.
 
+
+
+Esempio: http://localhost.api.it/product/search.php/s=1
