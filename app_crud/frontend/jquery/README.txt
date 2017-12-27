@@ -1,0 +1,15 @@
+├─ app/
+├─── assets/
+├────── css/
+├───────── style.css
+├────── js/
+├───────── bootbox.min.js
+├───────── jquery.js
+├─── products/
+├────── create-product.js
+├────── delete-product.js
+├────── read-one-product.js
+├────── read-products.js
+├────── update-product.js
+├─── app.js
+├─ index.html
