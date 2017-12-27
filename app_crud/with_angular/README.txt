@@ -1,0 +1,13 @@
+├─ app/
+├─── assets/
+├────── css/
+├───────── custom.css
+├─── products/
+├────── create_product.template.html
+├────── products.controller.js
+├────── products.factory.js
+├────── read_one_product.template.html
+├────── read_products.template.html
+├────── update_product.template.html
+├─── app.js
+├─ index.html
