@@ -57,6 +57,7 @@ app.controller('productsController', function ($scope, $mdDialog, $mdToast, prod
 
     // show toast message
     $scope.showToast = function (message) {
+        console.log(message);
         $mdToast.show(
             $mdToast.simple()
             .textContent(message)
@@ -207,7 +208,16 @@ app.controller('productsController', function ($scope, $mdDialog, $mdToast, prod
 
     }
 
-    // searchProducts will be here
+    // search products
+    $scope.searchProducts = function () {
+
+        // use products factory
+        productsFactory.searchProducts($scope.product_search_keywords).then(function successCallback(response) {
+            $scope.products = response.data.records;
+        }, function errorCallback(response) {
+            $scope.showToast("Unable to read record.");
+        });
+    }
 
 
     // methods for dialog box

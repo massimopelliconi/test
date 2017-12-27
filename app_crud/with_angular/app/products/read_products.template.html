@@ -16,7 +16,13 @@
             </div>
         </md-toolbar>
 
-        <!-- 'search' bar will be here -->
+        <!-- used for searching products in api -->
+        <md-input-container class="md-block m-b-0px">
+            <form ng-submit="searchProducts()">
+                <label>Search products...</label>
+                <input ng-model="product_search_keywords">
+            </form>
+        </md-input-container>
 
         <md-content flex>
             <!-- show product record list -->

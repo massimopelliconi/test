@@ -59,7 +59,13 @@ app.factory("productsFactory", function ($http) {
         });
     };
 
-    // searchProducts will be here
+    // search all products
+    factory.searchProducts = function (keywords) {
+        return $http({
+            method: 'GET',
+            url: 'http://localhost.app.it/api/product/search.php?s=' + keywords
+        });
+    };
 
     return factory;
 });
