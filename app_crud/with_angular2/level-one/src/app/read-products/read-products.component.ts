@@ -30,5 +30,7 @@ export class ReadProductsComponent implements OnInit {
             .subscribe(products =>
                 this.products=products['records']
             );
+
     }
+
 }
